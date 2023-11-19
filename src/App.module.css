@@ -1,0 +1,21 @@
+.content {
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__container {
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #cbceceed;
+    color: #524a4d;
+    border-radius: 10px;
+}
