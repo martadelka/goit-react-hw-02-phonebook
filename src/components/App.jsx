@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import css from '../App.module.css'
 
+import { Report } from 'notiflix/build/notiflix-report-aio';
+
 import { Filter } from './Filter/Filter'
 import { ContactList } from './ContactList/ContactList'
 import { ContactForm } from './ContactForm/ContactForm'
@@ -30,7 +32,7 @@ export class App extends Component {
     );
 
     if (exists) {
-      alert(`${event.name} is already in contacts!`);
+      Report.failure(`Failed to add!`, `${event.name} is already in contacts!`, `Back`);
     } else {
       this.setState(({ contacts }) => ({
         contacts: [...contacts, event],
