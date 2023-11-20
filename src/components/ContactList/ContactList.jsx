@@ -4,7 +4,6 @@ export const ContactList = ({ contacts, children, deleteContact }) => {
   return (
     <div className={css.contacts}>
       <h2>Contacts</h2>
-      {children}
       <ul className={css.contacts__list}>
         {contacts.map(({ id, name, number }) => (
           <li className={css.contacts__item} key={id}>
