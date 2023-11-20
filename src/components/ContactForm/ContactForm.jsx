@@ -3,6 +3,11 @@ import { nanoid } from 'nanoid'
 import css from './ContactForm.module.css'
 
 export class ContactForm extends Component {
+  state = {
+    name: '',
+    number: '',
+  };
+
   handleFormSubmit = event => {
     event.preventDefault();
 
